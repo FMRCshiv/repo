@@ -1,0 +1,81 @@
+/* Responsive Design Optimizations for Blizzard Theme */
+
+/* Mobile First Approach */
+@media (max-width: 640px) {
+  /* Navigation */
+  .nav-link {
+    @apply px-2 py-1 text-xs;
+  }
+  
+  /* Cards */
+  .card {
+    @apply mx-2;
+  }
+  
+  /* Buttons */
+  .btn {
+    @apply text-xs px-3 py-1.5;
+  }
+  
+  /* Tabs */
+  .tab-button {
+    @apply px-2 py-2 text-xs;
+  }
+  
+  /* Server grid */
+  .server-grid {
+    @apply grid-cols-1;
+  }
+  
+  /* Stats cards */
+  .stats-grid {
+    @apply grid-cols-2;
+  }
+  
+  /* Console */
+  .console {
+    @apply text-xs p-2;
+  }
+  
+  /* Modal */
+  .modal {
+    @apply mx-2 max-w-full;
+  }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .server-grid {
+    @apply grid-cols-2;
+  }
+  
+  .stats-grid {
+    @apply grid-cols-3;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .server-grid {
+    @apply grid-cols-3;
+  }
+  
+  .stats-grid {
+    @apply grid-cols-4;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .btn {
+    @apply min-h-12;
+  }
+  
+  .nav-link {
+    @apply min-h-12;
+  }
+  
+  .tab-button {
+    @apply min-h-12;
+  }
+}

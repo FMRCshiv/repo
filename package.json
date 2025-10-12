@@ -1,0 +1,57 @@
+{
+  "name": "blizzard-pterodactyl-theme",
+  "version": "1.0.0",
+  "description": "A modern, professional theme for Pterodactyl Panel with dark mode support and responsive design",
+  "main": "public/themes/blizzard/js/theme.js",
+  "scripts": {
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "tailwindcss -i ./resources/css/theme.css -o ./public/themes/blizzard/css/theme.css --watch",
+    "build:js": "webpack --mode=production",
+    "dev": "npm run dev:css & npm run dev:js",
+    "dev:css": "tailwindcss -i ./resources/css/theme.css -o ./public/themes/blizzard/css/theme.css --watch",
+    "dev:js": "webpack --mode=development --watch",
+    "lint": "eslint public/themes/blizzard/js/",
+    "lint:fix": "eslint public/themes/blizzard/js/ --fix"
+  },
+  "keywords": [
+    "pterodactyl",
+    "theme",
+    "panel",
+    "game-server",
+    "management",
+    "dark-mode",
+    "responsive"
+  ],
+  "author": "Blizzard Theme Developer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/blizzard-pterodactyl-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/blizzard-pterodactyl-theme/issues"
+  },
+  "homepage": "https://github.com/your-username/blizzard-pterodactyl-theme#readme",
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "alpinejs": "^3.13.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

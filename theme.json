@@ -1,0 +1,20 @@
+{
+  "name": "Blizzard Theme",
+  "version": "1.0.0",
+  "description": "A modern, professional theme for Pterodactyl Panel with dark mode support and responsive design",
+  "author": "Blizzard Theme Developer",
+  "license": "MIT",
+  "pterodactyl_version": "1.x",
+  "features": [
+    "dark_mode",
+    "responsive_design",
+    "custom_colors",
+    "modern_ui",
+    "accessibility"
+  ],
+  "screenshots": [
+    "screenshots/dashboard.png",
+    "screenshots/server-list.png",
+    "screenshots/console.png"
+  ]
+}
