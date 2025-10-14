@@ -4,6 +4,14 @@
 # Usage: curl -sSL https://raw.githubusercontent.com/your-username/blizzard-pterodactyl-theme/main/install.sh | bash
 
 set -e
+echo "
+d8888b. d88888b db    db      .d8888. db   db d888888b db    db 
+88  \`8D 88'     88    88      88'  YP 88   88   \`88'   88    88 
+88   88 88ooooo Y8    8P      \`8bo.   88ooo88    88    Y8    8P 
+88   88 88~~~~~ \`8b  d8'        \`Y8b. 88~~~88    88    \`8b  d8' 
+88  .8D 88.      \`8bd8'       db   8D 88   88   .88.    \`8bd8'  
+Y8888D' Y88888P    YP         \`8888Y' YP   YP Y888888P    YP    
+"
 
 # Colors for output
 RED='\033[0;31m'
@@ -169,4 +177,4 @@ echo "• Easy customization options"
 echo ""
 echo "Need help? Check the documentation or open an issue on GitHub."
 echo ""
-print_success "Happy gaming! 🎮"
+print_success "By Dev-Shiv! 🎮"
