@@ -38,10 +38,9 @@ print_error() {
 }
 
 # Check if running as root
-if [[ $EUID -eq 0 ]]; then
-   print_error "This script should not be run as root for security reasons"
-   exit 1
-fi
+#if [[ $EUID -eq 0 ]]; then
+#   print_warning "Running as root. Proceeding with caution. It's recommended to run as the panel/web user."
+#fi
 
 # Detect Pterodactyl installation directory
 PTERO_DIR=""
@@ -78,7 +77,7 @@ print_status "Downloading Blizzard theme..."
 cd "$TEMP_DIR"
 
 # If this is a git repository, clone it
-if git clone https://github.com/your-username/blizzard-pterodactyl-theme.git . 2>/dev/null; then
+if git clone https://github.com/FMRCshiv/reop.git . 2>/dev/null; then
     print_success "Theme downloaded successfully"
 else
     print_error "Failed to download theme. Please check your internet connection."
