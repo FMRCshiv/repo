@@ -77,7 +77,7 @@ print_status "Downloading Blizzard theme..."
 cd "$TEMP_DIR"
 
 # If this is a git repository, clone it
-if git clone https://github.com/FMRCshiv/reop.git . 2>/dev/null; then
+if git clone https://github.com/FMRCshiv/repo.git . 2>/dev/null; then
     print_success "Theme downloaded successfully"
 else
     print_error "Failed to download theme. Please check your internet connection."
