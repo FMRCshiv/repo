@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'name' => 'Blizzard Theme',
+    'name' => 'blizzard',
     'version' => '1.0.0',
     'author' => 'Blizzard Theme Developer',
     'description' => 'A modern, professional theme for Pterodactyl Panel with dark mode support and responsive design',
